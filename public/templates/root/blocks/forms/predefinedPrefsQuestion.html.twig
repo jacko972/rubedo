@@ -10,7 +10,7 @@
     <input type="hidden"  name="{{ field.id }}question{{optionsLooper}}expPlanRow"  value="{{ field.itemConfig.usedRows[optionsLooper-1] }}">
     <label class="control-label" for="{{ field.id }}">{{ field.itemConfig.label }} {% if field.itemConfig.mandatory %} *{% endif %}</label>  {% if field.id in errors|keys %}<span class="help-inline">{{ errors[field.id] }}</span>{% endif %}
         <div class="clearfix"></div>
-      <table class="table" style="width:{{ 200+field.itemConfig.numberOfChoices*70 }}px;">
+      <table class="table" style="width:{{ 300+field.itemConfig.numberOfChoices*100 }}px;">
       <thead>
         <tr>
           <th>Heure de départ</th>
