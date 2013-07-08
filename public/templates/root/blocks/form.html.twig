@@ -5,7 +5,7 @@
 
 <div id="form-container-{{ form.id }}" class="rubedo-form-container" data-currentPage="{{ currentFormPage }}">
     {% if displayNew==true %}
-                <a class="btn btn-warning pull-right form-new-button" href="?getNew=1"><i class="icon-file icon-white"></i> Nouveau</a>
+                <a class="btn btn-warning pull-right form-new-button" href="?getNew=1"><i class="icon-file icon-white"></i> Nouveau / New</a>
                 <div class="clearfix"></div>
     {% endif %}
     
@@ -32,13 +32,13 @@
             <div class="row-fluid">
                 <div class="span12">
     	            {% if currentFormPage !=0 %}
-                        <a class="btn" href="?getPrevious=1">Précédent</a>
+                        <a class="btn" href="?getPrevious=1">Précédent / Previous</a>
     	            {% endif %}
     	            
     	            {% if currentFormPage==nbFormPages-1 %}
-                        <input class="btn btn-info float-right" type="submit" value="Terminer"/>
+                        <input class="btn btn-info float-right" type="submit" value="Terminer / Finish"/>
     	            {% else %}
-                        <input class="btn float-right" type="submit" value="Suivant"/>
+                        <input class="btn float-right" type="submit" value="Suivant / Next"/>
     	            {% endif %}
 	            </div>
 	        </div>
